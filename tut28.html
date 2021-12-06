@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--  tut 27 and tut 28 work -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flexbox amd z index </title>
+    <style>
+        .container {
+            /* background-color: lightblue; */
+            height: 666px;
+            width: 100%;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* flex-wrap:nowrap; */
+            /* flex-wrap:  wrap-reverse; */
+            justify-content: center;
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+
+
+
+        }
+
+        .box {
+            background-color: rgb(212, 186, 186);
+            border: 2px solid black;
+            margin: 12px;
+            padding: 50px;
+            height: 25px;
+            /* in random.html file i have removed this height 25px bcoz box was not able to take height as we compress window. we did it for responsiveness of website in that html file since there was paragraph in box  */
+
+            /*  if you dont want to use display flex then remove this with height and enter the previous one  display inline box and box sizing  */
+            /* display: inline-block;
+            box-sizing: border-box; */
+
+
+        }
+
+        /*  z index  undestanding */
+        /*  also trying flex properties in items  */
+        #box1 {
+            background-color: rgb(214, 21, 21);
+            /* position: absolute;
+            left: 243px;
+            z-index: -1; */
+            /* visibility: hidden; */
+            /* display: none; */
+
+            /* order: 2; */
+            /* flex-grow: 2; */
+        }
+
+        #box2 {
+            background-color: rgb(44, 92, 224);
+            /* order: 1; */
+            /* flex-grow: 1; */
+        }
+
+        #box3 {
+            background-color: rgb(171, 223, 29);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+        <div class="box" id="box8"></div>
+
+    </div>
+</body>
+
+</html>

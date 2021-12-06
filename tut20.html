@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- i have skipped previous tuts practise because those are easy to implement  -->
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+    .logo{
+        text-align: center;
+    }
+        .box {
+            margin: auto;
+            float: left;
+            /* box-sizing: border-box; */
+            margin: 6px 16px;
+            padding: 4px;
+            border: 2px solid red;
+            /* margin-top: 66px; */
+            /* width: 287px; */
+            width: 31%;
+            height: 233px;
+            padding-left: 22px;
+            border-radius: 10px;
+            background-color: rgb(213 209 226);
+           
+        }
+   
+        h1{
+            /* padding:3rem 112rem;   */
+            flex-wrap: wrap; 
+        }
+      p{
+          padding-top: 39px;
+          flex-wrap: wrap;
+      }
+      
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="logo">
+            <img src="melogo.png" alt="mypic " height="150px">
+        </div>
+
+    </section>
+    <div class="container">
+        <div class="box">
+            <h1> heading 1 </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat distinctio voluptatum earum
+                dolore suscipit voluptatibus dolorum soluta et iusto?
+            </p>
+        </div>
+        <div class="box">
+            <h1> heading 2 </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat distinctio voluptatum earum
+                dolore suscipit voluptatibus dolorum soluta et iusto?
+            </p>
+        </div>
+        <div class="box">
+            <h1> heading 3</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat distinctio voluptatum earum
+                dolore suscipit voluptatibus dolorum soluta et iusto?
+            </p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

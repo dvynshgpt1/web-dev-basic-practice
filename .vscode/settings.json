@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.useBrowserPreview": true,
+    "liveServer.settings.multiRootWorkspaceName": "CWH webdev",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 600,
+    "liveServer.settings.CustomBrowser": "chrome"
+}

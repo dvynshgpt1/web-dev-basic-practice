@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> random2</title>
+    <style>
+        * {
+            background-color: #ecf0f3;
+            margin: 0px;
+            padding: 0px;
+        }
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 33px;
+            padding: 22px;
+            background-color: #ecf0f3;
+                }
+
+        .logo {
+            height: 60px;
+            width: 60px;
+            background: url(logo.png) no-repeat center center/cover;
+            top: 185px;
+            position: relative;
+            margin: auto;
+            border-radius: 50%;
+            box-sizing: border-box;
+            box-shadow: -12px -15px 16px 2px white, 3px 7px 10px 2px rgb(88 88 88);
+        }
+
+        .box {
+
+            background-color: #ecf0f3;
+            /* color: black; */
+            /* border: 2px solid red; */
+            margin: 6px;
+            /* height: 384px;
+            width: 270px;*/
+            /* height: 60vh;
+            width: 50vw; */
+            height: 33rem;
+            width: 22rem;
+            text-align: center;
+            box-shadow: -12px -15px 16px 2px white, 3px 7px 10px 2px rgb(88 88 88);
+        }
+
+
+        h1 {
+
+            font-size: 30px;
+            margin: 21px 11px;
+            padding-top: 111px;
+            color: rgb(18, 173, 224);
+            font-weight: bolder;
+            font-family: cursive;
+
+        }
+
+        input {
+            background-color: #ecf0f3;
+            margin: 3px;
+            border: 1px solid #ecf0f3;
+            border-radius: 27px;
+            padding-bottom: 6px;
+            height: 24px;
+            text-align: center;
+            box-shadow: inset -3px -6px 2px white;
+        }
+
+        input:hover {
+            border: 2px solid white;
+        }
+
+        ::placeholder {
+            text-align: center;
+            color: black;
+            opacity: .7;
+            padding: 11px;
+        }
+
+
+        label {
+            margin-left: 102px;
+            font-size: 13px;
+            margin-right: 222px;
+            font-weight: 800
+        }
+
+        .btn {
+            width: 155px;
+            background-color: rgb(84, 198, 236);
+            position: relative;
+            top: 149px;
+            right: 0px;
+            height: 27px;
+            border-radius: 12px;
+            border: 11px white;
+            font-weight: 700;
+        }
+
+        .btn:hover {
+            width: 160px;
+            height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="logo">
+            <!-- <img src="logo.png" alt="twitter logo" height="55px"> -->
+        </div>
+    </section>
+    <div class="container">
+        <div class="box">
+            <h1> TWITTER </h1>
+            <button class="btn">LOGIN</button>
+            <form action="">
+                <label>EMAIL</label>
+                <input type="email" class="email" id="email" placeholder="example@gmail.com">
+                <Label>PASSWORD</Label>
+                <input type="password" class="password" id="password" placeholder="**********">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

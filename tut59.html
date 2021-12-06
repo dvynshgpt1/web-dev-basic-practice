@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> date and time in js</title>
+    <style>
+        #time{
+            background-color: lightcyan;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>this is tutorial 58</h3>
+    <div id="item"></div>
+    <hr>
+    <div id="box"></div>
+
+    <script>
+        // function displayTime(){
+        // let time=  new Date();
+        // console.log(time);
+        // document.getElementById('box').innerHTML=time;
+        // }            
+        // setInterval(displayTime , 1000);
+
+       
+        // let now = new Date();
+        // console.log(now);
+
+        // document.getElementById('item').innerHTML=now;
+
+        // let dt= new Date(0);
+        // console.log(dt);       
+        // document.getElementById('item').innerHTML=dt;
+
+        // let newdate=new Date(year , month , date, hours , minutees, seconds, miliseconds);
+        let newdate=new Date(2030 , 4 , 9, 0 , 0);
+          console.log(newdate);
+        //   document.getElementById('box').innerHTML=newdate;
+
+        //   let yr = newdate.getFullYear();
+        //   console.log("the year is  ", yr);
+        //   document.getElementById('box').innerHTML=yr;
+         
+        let dt = newdate.getDate();
+          console.log("the year is  ", dt);
+          document.getElementById('box').innerHTML=dt;
+
+        </script>
+</body>
+</html>

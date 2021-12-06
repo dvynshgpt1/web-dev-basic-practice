@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut23</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+
+        }
+        .navbar {
+            background-color: black;
+            border-radius: 1px;
+            height: 65px;
+        }
+
+        /* .navbar ul {
+             overflow: auto;
+            text-align: center;
+            padding-top: 0px;
+            padding-left: 895px;  
+             } */
+
+        .navbar li {
+            float: left;
+            padding-top: 14px;
+            margin: 11px;
+            list-style: none;
+            font-size: 16px;
+        }
+
+        .navbar li a {
+            float: left;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            padding-top: 0px;
+            color: white;
+            margin: auto;
+
+
+        }
+
+        .navbar li a:hover {
+            font-size: 21px;
+            color: rgb(158, 196, 69);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .search {
+            float: right;
+            padding: 22px 1px;
+            position: static;
+            left: 317px;
+        }
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 0px 11px;
+        }
+
+
+        .container{
+         /* justify-content: center; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            border: 2px solid rgb(36, 6, 117);
+            padding: 0px;
+            margin: auto;
+            /* float: left; */
+            margin: 1rem;
+            margin-top: 1rem;
+            /* margin-top: 100px; */
+            width: 29vw;
+            box-sizing: border-box;
+            display: inline-block;
+            background-color: rgb(172, 216, 236);
+            flex-wrap: wrap;
+        }
+
+        .heading {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+        }
+
+        
+        #box1 {
+            /* absolute will take postion 130px postion from parent container. */
+            /* relative will take its position from normal position */
+            /* position: static; */
+            /* position: absolute; 
+              top: 130px; */
+            /* position: relative;
+             /* top: 130px;  */
+            /* position: sticky;
+            left: 500px;  */
+
+            /* position: fixed;
+             left: 500px; */
+        }
+
+        .para {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 2rem;
+            margin: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        h2{
+            /* margin-left: 124px;
+            margin-top: 11px; */
+            margin: .5rem;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .chat {
+            color: rgb(30, 16, 105);
+            position: sticky;
+            margin-left: 1322px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">About us</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+                <div class="search">
+                    <input type="text" class="search" id="search" placeholder="search here">
+                </div>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="box" id="box1">
+            <h2 class="heading"> heading</h2>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores voluptates cum
+                beatae quas fugiat deleniti laudantium cupiditate tenetur consectetur. Earum quos fuga ducimus?</p>
+        </div>
+        <div class="box" id="box2">
+            <h2 class="heading"> heading</h2>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores voluptates cum
+                beatae quas fugiat deleniti laudantium cupiditate tenetur consectetur. Earum quos fuga ducimus?</p>
+        </div>
+        <div class="box" id="box3">
+            <h2 class="heading"> heading</h2>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores voluptates cum
+                beatae quas fugiat deleniti laudantium cupiditate tenetur consectetur. Earum quos fuga ducimus?</p>
+        </div>
+
+
+        <div class="chat">
+            <input type="text" name="chat" id="chat" placeholder="chat with us ">
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> size units , responsiveness</title>
+    <style>
+        html {
+            font-size: 23px;
+        }
+
+        .container {
+            border: 2px solid red;
+            /* height: 444px; */
+            height: 100vh;
+            width: 100vw;
+            /*  it takes full  height of view port by doing height as 100vh and  full width by doing 100vw  */
+            font-size: 22px;
+        }
+
+        h4 {
+            text-align: center;
+            /* font-size: 22px; */
+        }
+
+        #first {
+            font-size: 2em;
+            padding: 2em;
+            /* here padding is twice of upper font size.. since 2em font is computed as 44px ; 2 * 44= 88px padding  */
+            /* in id='first' it has taken 2x size of parent that is container here . h4 is not parent  */
+
+            font-size: 2rem;
+            padding: 2rem;
+            /* here padding is twice of HTML font size..since  html font size is 23px ; 2 * 23 = 46px padding */
+            /* in id='first' it has taken 2x size of HTML font size  */
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h4 id="first">hey , this is divyanshu 1</h4>
+        <h4 id="second">hey , this is divyanshu 2</h4>
+        <h4 id="third">hey , this is divyanshu 3</h4>
+    </div>
+
+</body>
+
+</html>

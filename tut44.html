@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS GRID template areas</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar'
+                'section section aside'
+                'footer footer footer';
+        }
+
+        #navbar {
+            grid-area: navbar;
+            background-color: black;
+            border: 2px solid red;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+             }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar li {
+            list-style: none;
+            cursor: pointer;
+            padding: 11px;
+            font-size: 19px;
+            text-decoration: none;
+        }
+
+        #section {
+            grid-area: section;
+            background-color: wheat;
+            border: 2px solid red; 
+            text-align: center;
+            padding: 111px 44px;
+        }
+
+        #aside {
+            grid-area: aside;
+            background-color: yellowgreen;
+            border: 2px solid red;
+            padding-top: 50px;
+      }
+
+        footer {
+            grid-area: footer;
+            background-color: whitesmoke;
+            border: 2px solid red;
+            text-align: center;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="items1">
+            <ul>
+                <li <a href="#"></a> Home</li>
+                <li <a href="#"></a> Services</li>
+                <li <a href="#"></a> About</li>
+                <li <a href="#"></a> Contact Us</li>
+            </ul>
+        </div>
+        <div id="section"> 
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum aliquid nobis autem? Minus,
+                    nobis nemo, maxime pariatur quia quas similique placeat totam ad eos ratione recusandae excepturi
+                    assumenda iste!</p>
+                  <hr>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores totam maxime ullam
+                    possimus nulla blanditiis aut vitae eius enim voluptatum consectetur minima magni officiis adipisci
+                    commodi dolore, dolores eaque.</p>
+           
+        </div>
+        <div id="aside" class="items3">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptate dolores, ut iusto vel, soluta aperiam consequatur libero earum omnis cum. Ad.</p>
+        </div>
+        <footer class="items4">
+            all copyright reserved 2021-2022
+        </footer>
+    </div>
+</body>
+
+</html>

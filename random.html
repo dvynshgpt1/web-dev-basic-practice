@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flexbox </title>
+    <style>
+        .navbar {
+            background-color: rgb(7, 2, 2);
+        }
+
+        .navbar ul {
+            display: flex;
+            padding: 11px;
+
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+        }
+
+        .navbar li {
+
+            padding: 6px;
+            margin: 3px;
+            flex-wrap: wrap;
+        }
+
+        .navbar li a {
+            color: white;
+            font-size: 22px;
+            text-decoration: none;
+            margin: 11px;
+            transition: all 0.1s ease-in 0s;
+        }
+
+        .navbar li a:hover {
+            font-size: 27px;
+            color: yellow;
+        }
+
+
+
+        .container {
+            /* background-color: lightblue; */
+            margin-top: 4px;
+            /* height: 666px; */
+            width: 100%;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* flex-wrap:nowrap; */
+            /* flex-wrap:  wrap-reverse; */
+            justify-content: center;
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+            display: flex;
+            
+        }
+        .container::before{
+            background: url(gym.jpg) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+            opacity: 0.7;
+
+        }
+
+        .box {
+            /* background-color: rgb(212, 186, 186); */
+            /* border: 2px solid black; */
+            margin: 12px;
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            /* height: 25px; */
+            /*  if you dont want to use display flex then remove this with height and enter the previous one  display inline box and box sizing  */
+            /* display: inline-block;
+            box-sizing: border-box; */
+            /* box-shadow: 11px 11px rgb(162, 197, 37); */
+            height: 25vh;
+            width: 25vw;
+            transition: all .5s ease-in 0s;
+
+        }
+
+        .box:hover {
+            height: 30vh;
+            width: 30vw;
+            /* background-color: green; */
+            
+        }
+
+
+        p {
+            text-align: center;
+            margin: -28px;
+            transition: all .5s ease-in 0s;
+        }
+
+        p:hover {
+            font-size: 23px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /*  applying this media query will do what that at minimum reduced pc screen it will on hovering will maintain its reponsivity */
+        @media(min-width:320px) and (max-width:530px) {
+            .navbar li {
+                padding: 3px;
+                /* padding: 6px; */
+                margin: 3px;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <ul>
+                <li> <a href="#">home</a></li>
+                <li> <a href="#">services</a></li>
+                <li> <a href="#">about us</a></li>
+                <li> <a href="#">contact us</a></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="box" id="box1">
+            <h3 class="header">
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ducimus cumque quas
+                    ratione molestias fuga quibusdam neque quod! Commodi autem sapiente doloremque sequi. Repellat?</p>
+            </h3>
+        </div>
+        <div class="box" id="box2">
+            <h3 class="header">
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ducimus cumque quas
+                    ratione molestias fuga quibusdam neque quod! Commodi autem sapiente doloremque sequi. Repellat?</p>
+            </h3>
+        </div>
+        <div class="box" id="box3">
+            <h3 class="header">
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ducimus cumque quas
+                    ratione molestias fuga quibusdam neque quod! Commodi autem sapiente doloremque sequi. Repellat?</p>
+            </h3>
+        </div>
+        <div class="box" id="box4">
+            <h3 class="header">
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ducimus cumque quas
+                    ratione molestias fuga quibusdam neque quod! Commodi autem sapiente doloremque sequi. Repellat?</p>
+            </h3>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

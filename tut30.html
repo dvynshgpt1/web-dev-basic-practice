@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media queries</title>
+    <style>
+        .box {
+            text-align: center;
+            background-color: lightblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            padding: 11px;
+            margin: 6px;
+            display: none;
+
+        }
+
+        @media (max-width:280px) {
+            #box-1 {
+                display: block;
+            }
+        }
+
+        @media(min-width:280px) and (max-width:320px) {
+            #box-2 {
+                display: block;
+
+            }
+        }
+
+        @media(min-width:320px) and (max-width:530px) {
+            #box-7 {
+                display: block;
+                background-color: pink;
+
+            }
+        }
+
+        @media(min-width:540px) and (max-width:768px) {
+            #box-3 {
+                display: block;
+
+            }
+        }
+
+        @media(min-width:768px) and (max-width:1024px) {
+            #box-4 {
+                display: block;
+                background-color: rgb(77, 221, 77);
+
+            }
+        }
+
+        @media(min-width:1024px) and (max-width:1200px) {
+            #box-5 {
+                display: block;
+                background-color: rgb(218, 96, 96);
+
+            }
+        }
+
+        @media(min-width:1200px) {
+            #box-6 {
+                display: block;
+                background-color:tomato;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box" id="box-1">this is galaxy fold</div>
+    <div class="box" id="box-2">this is iphone 5 </div>
+    <div class="box" id="box-3">this is ipad</div>
+    <div class="box" id="box-4"> this is ipad pro</div>
+    <div class="box" id="box-5"> this is halp pc screen </div>
+    <div class="box" id="box-6"> this is full pc screen </div>
+    <div class="box" id="box-7"> this is min reduced pc screen </div>
+</body>
+
+</html>

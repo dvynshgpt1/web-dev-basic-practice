@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JSON </title>
+</head>
+<body>
+       <div id="container"></div>
+
+       <script>
+           let obj={
+               name: "kunal",
+               channel: "CWH",
+               friend: "Ashish",
+               food: "idli",
+           }
+           console.log(obj);
+           let str=JSON.stringify(obj);
+           console.log(str);
+
+           str=str.replace('kunal' , 'karan');
+           console.log(str);
+
+           obj1=JSON.parse(str);
+           console.log(obj1);
+       </script>
+</body>
+</html>

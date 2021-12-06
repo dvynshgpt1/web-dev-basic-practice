@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- i am unable to se background image -->
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> before and after pseudo selectors</title>
+        <style>
+       body{
+           margin: 0px;
+           padding: 0px;
+           background-color: black;
+           color: white;
+        } 
+
+        .navbar {
+            background-color: rgb(183, 196, 183);
+            border: 2px solid black;
+        }
+
+        .navbar ul {
+
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .navbar li a {
+            font-size: 23px;
+            color: black;
+            text-decoration: none;
+            padding: 19px;
+        }
+
+        .navbar li a:hover {
+            font-size: 27px;
+            color: rgb(29, 41, 211);
+            padding: 14px;
+        }
+
+        .section {
+            margin-top: 200px;
+            flex-wrap: wrap;
+             
+          
+        }
+
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            padding: 2px;
+            margin: 2px;
+            text-align: center;
+            color: yellow;
+            }
+
+        h1:hover{
+            font-size: 45px;
+            color: white;
+        }
+
+        p {
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 13px;
+            text-align: center;
+            flex-wrap: wrap;
+             }
+        header::before{
+            content: "";
+            background: url(gym.jpg) no-repeat center center/cover;
+            position: absolute; 
+            top: 0px;
+            bottom: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href=""> Home</a> </li>
+                <li> <a href=""> Services</a></li>
+                <li><a href=""> About</a></li>
+                <li><a href=""> Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section">
+        <h1> Gym Complex </h1>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consequatur cum soluta possimus repudiandae
+            similique ipsum quisquam temporibus ducimus neque, cupiditate pariatur non rerum asperiores porro
+            reprehenderit, incidunt dignissimos quaerat!</p>
+     </section>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 2rem; 
+            grid-template-columns: 200px 100px 100px;
+            /* grid-template-rows: 300px 300px 300px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(5 , auto); */
+            /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+        }
+
+        .box {
+            background-color: yellowgreen;
+            height: 222px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 6px;
+            
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">this is divyanshu</div>
+        <div class="box">this is divyanshu</div>
+        <div class="box">this is divyanshu</div>
+        <!-- <div class="box">this is divyanshu</div>
+        <div class="box">this is divyanshu</div>
+        <div class="box">this is divyanshu</div>
+        <div class="box">this is divyanshu</div>
+        <div class="box">this is divyanshu</div>
+        <div class="box">this is divyanshu</div> -->
+    </div>
+</body>
+
+</html>

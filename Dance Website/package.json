@@ -1,0 +1,19 @@
+{
+  "name": "dance-website",
+  "version": "1.0.0",
+  "description": "hello this is best",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cool"
+  ],
+  "author": "kunal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}

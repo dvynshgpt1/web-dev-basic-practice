@@ -1,0 +1,30 @@
+
+/* universal styling */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+ /* navbar styling */
+
+nav{
+  justify-content: center;
+  background-color: black;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    margin: 20px 14px 20px 14px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    padding: 11px;
+}

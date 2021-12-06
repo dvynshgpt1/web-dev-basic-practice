@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .box{
+            margin: 100px;
+            height: 333px;
+            width: 333px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 3s ease-in 0s;
+             }
+             .box:hover{
+                 transform: rotate(45deg);
+                 /* transform: scale(1.5);
+                 transform: skew(30deg); */
+                 font-size: 23px;
+             }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> hello this is transform tutorial</div>
+    </div>
+</body>
+</html>
